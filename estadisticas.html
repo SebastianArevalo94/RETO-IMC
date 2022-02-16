@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- personal css -->
+    <link rel="stylesheet" href="styles/estadisticas.css">
+    <!-- bootstrap css -->
+    <title>Estadisticas</title>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li><a href="index.html">Calcular IMC</a></li>
+            <li><a href="estadisticas.html">Tabla de Estadisticas</a></li>
+        </ul>
+    </nav>
+    <div class="tabla" id="tabla">
+        <table class="element" class="table">
+            <thead>
+              <tr>
+                <th class="element" scope="col">Genero</th>
+                <th class="element" scope="col">Edad</th>
+                <th class="element" scope="col">Peso</th>
+                <th class="element" scope="col">Estaura</th>
+                <th class="element" scope="col">Imc</th>
+              </tr>
+            </thead>
+            <tbody id="listar"></tbody>
+        </table>
+    </div>
+    <script src="scripts/stats_script.js"></script>
+</body>
+</html>

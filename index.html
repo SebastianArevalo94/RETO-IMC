@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- personal css -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>IMC</title>
+  </head>
+
+  <body>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li><a href="index.html">Calcular IMC</a></li>
+            <li><a href="estadisticas.html">Tabla de Estadisticas</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+      <div class="imc">
+        <h3 class="form__h3">CALCULADORA IMC</h3>
+        <form class="form">
+          <p class="form__p">Descubra su indice de masa corporal</p>
+          <select class="input form__select" name="genero" id="genero">
+            <option disabled selected>Selecciona tu genero</option>
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+          </select>
+          <label
+            >Edad:
+            <input
+              class="input"
+              id="edad"
+              type="number"
+              placeholder="Introduce tu edad"
+            />
+          </label>
+          <label
+            >Peso:
+            <input
+              class="input"
+              id="peso"
+              type="number"
+              placeholder="Introduce tu peso"
+            />
+          </label>
+          <label
+            >Altura:
+            <input
+              class="input"
+              id="altura"
+              type="number"
+              placeholder="Tu altura (en cm)"
+            />
+          </label>
+          <button class="form__button" type="button" onclick="script()">
+            CALCULAR IMC
+          </button>
+        </form>
+      </div>
+      <div class="resultado" id="result"></div>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
